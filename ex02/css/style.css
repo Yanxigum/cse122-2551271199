@@ -1,0 +1,58 @@
+:root {
+  --mau-vang-dam: #C9A227;
+  --mau-vang-nhat: #A8861B;
+  --mau-chu: #FFFFFF;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 24px 12px;
+  font-family: "Times New Roman", serif;
+  background-color: #f2f2f2;
+}
+
+.banner {
+  max-width: 820px;
+  background: linear-gradient(160deg, var(--mau-vang-dam), var(--mau-vang-nhat));
+  color: var(--mau-chu);
+  padding: 28px 36px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 26px;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin: 0 0 18px;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.anh-noi {
+  float: right;
+  width: 260px;
+  border: 3px solid rgba(255, 255, 255, 0.85);
+  border-radius: 4px;
+  margin: 0 0 14px 18px;
+}
+
+@media (max-width: 600px) {
+  .banner {
+    padding: 20px;
+  }
+
+  .anh-noi {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 16px;
+    box-sizing: border-box;
+  }
+}
